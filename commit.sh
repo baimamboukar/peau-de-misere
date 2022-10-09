@@ -1,5 +1,5 @@
- for file in $(git ls-files --others --exclude-standard); do
+ for file in $(git ls-files --exclude-standard); do
    git add $file
-   git commit -m "Peau de misere 📖"
+   git commit -m "$1"
  done
  git push
